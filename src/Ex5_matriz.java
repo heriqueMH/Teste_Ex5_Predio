@@ -10,6 +10,7 @@ public class Ex5_matriz {
         System.out.println("\nSoma de moradores: " + QtdeMore(predio));
         System.out.println("\nSoma de apartamentos vazios: " + verVazio(predio));
         System.out.println("\nSoma do andar com mais moradores: " + verAndar(predio));
+        System.out.println("\nAndar que possui o maior número de moradores: " + encontrarLinhaMaiorSoma(predio));
     }
 
     public static void preenche_predio(int[][] predio) {
@@ -42,6 +43,24 @@ public class Ex5_matriz {
         }
         
         return maiorSoma;
+    }
+
+    public static int encontrarLinhaMaiorSoma(int[][] matriz) {
+        int somaMaxima = Integer.MIN_VALUE;
+        int linhaMaiorSoma = -1;
+        for (int i = 0; i < matriz.length; i++) {
+            int somaLinha = 0;
+            for (int j = 0; j < matriz[i].length; j++) {
+                somaLinha += matriz[i][j];
+            }
+            if (somaLinha > somaMaxima) {
+                somaMaxima = somaLinha;
+                linhaMaiorSoma = i;
+                linhaMaiorSoma = linhaMaiorSoma + 1;
+            }
+        }
+
+        return linhaMaiorSoma;
     }
 
     public static int verVazio(int[][] predio) {
