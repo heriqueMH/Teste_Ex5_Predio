@@ -3,7 +3,7 @@ public class Ex5_matriz {
     public static void main(String[] args) {
 
         int[][] predio = new int[10][8];
-        //preencher predioriz
+        
         preenche_predio(predio);
         mostra_predio(predio);
         System.out.println();
