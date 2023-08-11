@@ -56,7 +56,7 @@ public class Ex5_matriz {
             if (somaLinha > somaMaxima) {
                 somaMaxima = somaLinha;
                 linhaMaiorSoma = i;
-                linhaMaiorSoma = linhaMaiorSoma + 1;
+                linhaMaiorSoma++;
             }
         }
 
