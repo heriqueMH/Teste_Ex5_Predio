@@ -4,16 +4,16 @@ public class Ex5_matriz {
 
         int[][] predio = new int[10][8];
         
-        preenche_predio(predio);
-        mostra_predio(predio);
+        preenchePredio(predio);
+        mostraPredio(predio);
         System.out.println();
-        System.out.println("\nSoma de moradores: " + QtdeMore(predio));
+        System.out.println("\nSoma de moradores: " + qtdeMore(predio));
         System.out.println("\nSoma de apartamentos vazios: " + verVazio(predio));
         System.out.println("\nSoma do andar com mais moradores: " + verAndar(predio));
         System.out.println("\nAndar que possui o maior número de moradores: " + encontrarLinhaMaiorSoma(predio));
     }
 
-    public static void preenche_predio(int[][] predio) {
+    public static void preenchePredio(int[][] predio) {
         for (int i = 0; i < predio.length; i++) {
             for (int j = 0; j < predio[i].length; j++) {
                 predio[i][j] = (int) (Math.random() * 7);
@@ -21,7 +21,7 @@ public class Ex5_matriz {
         }
     }
 
-    public static void mostra_predio(int[][] predio) {
+    public static void mostraPredio(int[][] predio) {
         for (int i = 0; i < predio.length; i++) {
             System.out.println();
             for (int j = 0; j < predio[i].length; j++) {
@@ -41,7 +41,6 @@ public class Ex5_matriz {
                 maiorSoma = somaLinha;
             }
         }
-        
         return maiorSoma;
     }
 
@@ -59,7 +58,6 @@ public class Ex5_matriz {
                 linhaMaiorSoma++;
             }
         }
-
         return linhaMaiorSoma;
     }
 
@@ -74,15 +72,13 @@ public class Ex5_matriz {
         return aptos;
     }
 
-    public static int QtdeMore(int[][] predio) {
+    public static int qtdeMore(int[][] predio) {
         int moradores = 0;
         for (int i = 0; i < predio.length; i++) {
             for (int j = 0; j < predio[i].length; j++){
                 moradores = moradores + predio[i][j];
-                
             }
         }      
         return moradores;
     }
-
 }
