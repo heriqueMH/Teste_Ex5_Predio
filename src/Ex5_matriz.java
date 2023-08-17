@@ -7,10 +7,11 @@ public class Ex5_matriz {
         preenchePredio(predio);
         mostraPredio(predio);
         System.out.println();
-        System.out.println("\nSoma de moradores: " + qtdeMore(predio));
+        System.out.print("\nSoma de moradores: " + qtdeMore(predio));
         System.out.println("\nSoma de apartamentos vazios: " + verVazio(predio));
+        System.out.print("\nAndar que possui o maior número de moradores: " + encontrarLinhaMaiorSoma(predio) + "º");
         System.out.println("\nSoma do andar com mais moradores: " + verAndar(predio));
-        System.out.println("\nAndar que possui o maior número de moradores: " + encontrarLinhaMaiorSoma(predio));
+        System.out.println("");
     }
 
     public static void preenchePredio(int[][] predio) {
