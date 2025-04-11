@@ -1,18 +1,21 @@
-## Getting Started
+### README - java-teste-ex5-predio
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Java - Teste Ex5 Prédio 🏢
 
-## Folder Structure
+Projeto Java para simulação de funcionalidades relacionadas à gestão de um prédio, utilizando conceitos básicos de orientação a objetos.
 
-The workspace contains two folders by default, where:
+## ✨ Funcionalidades
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Cadastro de apartamentos e andares
+- Simulação de ocupação dos apartamentos
+- Exibição das unidades ocupadas e disponíveis
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 🛠️ Tecnologias Utilizadas
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- Java 17
+- Orientação a Objetos
 
-## Dependency Management
+## 🚀 Como executar o projeto
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+git clone https://github.com/seu-usuario/java-teste-ex5-predio.git
+cd java-teste-ex5-predio
